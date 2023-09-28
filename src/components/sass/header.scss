@@ -18,5 +18,5 @@ header .ne {
 }
 
 header .ne:hover {
-    filter: drop-shadow(0 0 0.5rem #ff3c00aa);
+    filter: drop-shadow(0 0 0.5rem rgba($main-accent, .5));
 }

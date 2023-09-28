@@ -1,0 +1,146 @@
+
+@import "./colors";
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+
+    color: $main-accent;
+    background-color: $bg-color;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  ::selection {
+    background-color: $main-accent;
+    color: $bg-color;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    font-weight: 500;
+    color: $main-accent;
+    text-decoration: inherit;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  svg,
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: clamp(1rem, 8vw, 3.2rem);
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: 'Anton', sans-serif;
+  }
+
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .logo {
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    margin: 2rem 0.5rem;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2rem rgba($main-accent, .5));
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .read-the-docs {
+    color: $main-accent;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid #f6ccb8;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    background: transparent;
+    color: $main-accent;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+    margin: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  span.spinner {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  button:hover,
+  button:focus,
+  button:focus-visible {
+    border-color: $main-accent;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  header,
+  footer {
+    background-color: rgba($main-accent, .02);
+    width: 100%;
+    padding: clamp(24px, 1vw, 10rem) 0;
+  }
+  header .ne {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+  }
+  header .ne:hover {
+    filter: drop-shadow(0 0 0.5rem rgba($main-accent, .5));
+  }
+  footer {
+    display: flex;
+    overflow: hidden;
+  }
+  footer h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
