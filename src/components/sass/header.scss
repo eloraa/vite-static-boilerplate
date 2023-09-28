@@ -1,6 +1,6 @@
 header {
-    background-color: #ff3c0002;
-    border-bottom: 1px solid #ff3c001a;
+    background-color: rgba($main-accent, .02);
+    border-bottom: 1px solid rgba($main-accent, .05);
     width: 100%;
     padding: clamp(24px, 1vw, 10rem) 0;
 }
