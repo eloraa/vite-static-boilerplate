@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/media/vector/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Elora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 700;
+
+        color: #ff3c00;
+        background-color: #f4f0e6;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+      }
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        font-weight: 500;
+        color: #ff3c00;
+        text-decoration: inherit;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      svg,
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      h1 {
+        font-size: clamp(1rem, 8vw, 3.2rem);
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-family: 'Anton', sans-serif;
+      }
+
+      #app {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .logo {
+        display: inline-block;
+        height: 4rem;
+        width: 4rem;
+        margin: 2rem 0.5rem;
+        will-change: filter;
+        transition: filter 300ms;
+      }
+      .logo:hover {
+        filter: drop-shadow(0 0 2rem #ff3c00aa);
+      }
+
+      .card {
+        padding: 2rem;
+      }
+
+      .read-the-docs {
+        color: #ff3c00;
+      }
+
+      button {
+        border-radius: 8px;
+        border: 1px solid #f6ccb8;
+        padding: 1rem 4rem;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: inherit;
+        background: transparent;
+        color: #ff3c00;
+        cursor: pointer;
+        transition: border-color 0.25s;
+
+        margin: auto;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      span.spinner {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+      button:hover,
+      button:focus,
+      button:focus-visible {
+        border-color: #ff3c00;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+      }
+      h2 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      header,
+      footer {
+        background-color: #ff3c0002;
+        width: 100%;
+        padding: clamp(24px, 1vw, 10rem) 0;
+      }
+      header .ne {
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+      }
+      header .ne:hover {
+        filter: drop-shadow(0 0 0.5rem #ff3c00aa);
+      }
+      footer {
+        display: flex;
+        overflow: hidden;
+      }
+      footer h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/">
+          <div class="ne logo">
+            <svg viewBox="0 0 23 23">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23 0H15.6817V7.31831H23V0ZM7.31831 15.6817H0V23H7.31831V15.6817ZM5.92394 0H0V5.428L17.1537 23H23V18.354L5.92394 0Z" fill="#FF3C00" />
+            </svg>
+          </div>
+        </a>
+        <a href="http://github.com/eloraa" rel="norefferer" target="_blank">
+          <h2>elora</h2>
+        </a>
+      </div>
+    </header>
+    <div id="app"></div>
+    <footer>
+      <h4>
+        In the world of software development, staying up-to-date with the latest technologies and best practices is crucial. Whether you're a front-end developer crafting beautiful user interfaces or
+        a back-end engineer optimizing database queries, continuous learning and improvement are the keys to success.
+      </h4>
+      <h4>
+        In the world of software development, staying up-to-date with the latest technologies and best practices is crucial. Whether you're a front-end developer crafting beautiful user interfaces or
+        a back-end engineer optimizing database queries, continuous learning and improvement are the keys to success.
+      </h4>
+      <h4>
+        In the world of software development, staying up-to-date with the latest technologies and best practices is crucial. Whether you're a front-end developer crafting beautiful user interfaces or
+        a back-end engineer optimizing database queries, continuous learning and improvement are the keys to success.
+      </h4>
+    </footer>
+    <script>
+      function setupCounter(element) {
+        let counter = 0;
+        const setCounter = count => {
+          counter = count;
+          element.innerHTML = `Count Is ${counter}`;
+        };
+        element.parentNode.addEventListener('click', () => setCounter(counter + 1));
+        setCounter(0);
+      }
+
+      document.querySelector('#app').innerHTML = `
+  <div>
+    <h1>404</h1>
+    <h1>Not Found</h1>
+    <div class="card">
+      <button type="button">
+        <span class="spinner"><svg viewBox="0 0 18 18">
+        <path d="M6.254 17.5863L6.72417 12.3786L2.4339 15.3967L0.0830688 11.2542L4.78473 9.06455L0.0830688 6.87493L2.4339 2.73241L6.72417 5.75053L6.254 0.542786H10.9557L10.4855 5.75053L14.7758 2.73241L17.1266 6.87493L12.4249 9.06455L17.1266 11.2542L14.7758 15.3967L10.4855 12.3786L10.9557 17.5863H6.254Z" fill="#FF3C00"/>
+      </svg></span>
+        <span id="counter"></span>
+      </button>
+    </div>
+    <p class="read-the-docs">
+        <a href="http://github.com/eloraa" rel="norefferer" target="_blank">Visit Github Profile</a>
+    </p>
+  </div>
+`;
+
+      const counter = document.querySelector('#counter');
+
+      setupCounter(counter);
+
+      const spinner = document.querySelector('span.spinner');
+      const marquee = document.querySelectorAll('footer h4');
+      let currentRotation = 0;
+      let targetRotation = 0;
+      let currentTransform = 0;
+      let targetTransform = 0;
+      const lerpFactor = 0.05;
+
+      function update() {
+        currentRotation = lerp(currentRotation, targetRotation, lerpFactor);
+
+        if (targetTransform === 100) {
+          currentTransform = 0;
+        } else currentTransform = lerp(currentTransform, targetTransform, lerpFactor);
+
+        spinner.style.transform = `rotate(${currentRotation}deg)`;
+
+        marquee.forEach(e => {
+          e.style.transform = `translateX(-${currentTransform}%)`;
+        });
+
+        requestAnimationFrame(update);
+      }
+
+      function lerp(start, end, t) {
+        return start * (1 - t) + end * t;
+      }
+
+      counter.parentNode.addEventListener('click', () => {
+        targetRotation += 45;
+        targetTransform += 1;
+        if (targetTransform > 100) targetTransform = 0;
+      });
+
+      update();
+    </script>
+  </body>
+</html>

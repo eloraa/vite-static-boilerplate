@@ -1,0 +1,22 @@
+header {
+    background-color: #ff3c0002;
+    border-bottom: 1px solid #ff3c001a;
+    width: 100%;
+    padding: clamp(24px, 1vw, 10rem) 0;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .ne {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+}
+
+header .ne:hover {
+    filter: drop-shadow(0 0 0.5rem #ff3c00aa);
+}
